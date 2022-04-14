@@ -1,17 +1,23 @@
-import React, { useState, createContext } from 'react'
+import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
-
-
+export var isLogin: boolean
 export const LoginForm: React.FC = () => {
 const [email, setEmail]=useState<string>('')
 const [password, setPassword]=useState<string>('')
 
 const history = useHistory()
 
+
 function signUp(event: any){
   if (email==="usermail@gmail.com"&&password==="password")
-  history.push('/profile') 
+  {
+  localStorage.setItem("isLoggedIn", JSON.stringify(true))
+  history.push('/') 
+  window.location.reload();
+  }
+  else
+  alert("Wrong email or password!")
 }
 
 return(
@@ -36,7 +42,7 @@ return(
     </form>
 
     <button type='submit' className="btn" onClick={signUp}>
-        Sign Up
+      Submit
       </button>
   </div>
   )}

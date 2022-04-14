@@ -1,5 +1,5 @@
-import React from 'react';
-import ImageUploading, { ImageListType } from 'react-images-uploading';
+import React from "react";
+import ImageUploading, { ImageListType } from "react-images-uploading";
 
 export function PicturesPage() {
   const [images, setImages] = React.useState([]);
@@ -28,11 +28,11 @@ export function PicturesPage() {
           onImageUpdate,
           onImageRemove,
           isDragging,
-          dragProps,
+          dragProps
         }) => (
           <div className="upload__image-wrapper">
             <button
-              style={isDragging ? { color: 'red' } : undefined}
+              style={isDragging ? { color: "red" } : undefined}
               onClick={onImageUpload}
               {...dragProps}
             >
