@@ -54,6 +54,7 @@ function SortButton({
       );
     }
 
+    
 function SortableTable({ data }: { data: Data }) {
   const [sortKey, setSortKey] = useState<SortKeys>("last_name");
   const [sortOrder, setSortOrder] = useState<SortOrder>("ascn");
