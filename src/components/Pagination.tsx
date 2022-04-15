@@ -18,7 +18,7 @@ const Pagination: React.FC<PaginationProps> = ({
   }
 
   return (
-    <nav>
+    <div>
       <ul className='pagination'>
         {pageNumbers.map(number => (
           <li key={number} className='page-item'>
@@ -28,7 +28,7 @@ const Pagination: React.FC<PaginationProps> = ({
           </li>
         ))}
       </ul>
-    </nav>
+    </div>
   );
 };
 
