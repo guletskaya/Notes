@@ -9,10 +9,6 @@ export const LoginPage: React.FC = () => {
     <>
       <h1>Log In!</h1>
       <LoginForm />
-  
-      <button className="btn" onClick={() => history.push('/')}>
-        Back to ToDo List
-      </button>
     </>
   )
 }

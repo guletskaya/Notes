@@ -27,16 +27,10 @@ const history = useHistory()
           <NavLink exact to="/" className="main-nav" activeClassName='main-nav-active'>Home</NavLink>
         </li>
         <li>
-          <NavLink exact to="/todo" className="main-nav" activeClassName='main-nav-active'>ToDo List</NavLink>
-        </li>
-        <li>
-          <NavLink exact to="/pictures" className="main-nav" activeClassName='main-nav-active'>Pictures</NavLink>
-        </li>
-        <li>
           <NavLink exact to="/profile" className="main-nav" activeClassName='main-nav-active'>Profile</NavLink>
         </li>
         <li>
-        <NavLink to="/login" onClick={logout} >Log out</NavLink>
+        <NavLink to="/" onClick={logout} >Log out</NavLink>
         </li>       
         </ul>
     </div>
@@ -46,22 +40,12 @@ const history = useHistory()
   return(
   <nav>
     <div className="nav-wrapper indigo darken-4 px1">
-      <a href="/login" className="brand-logo">
+      <a href="/" className="brand-logo">
         Your Notes
       </a>
-
       <ul className="right hide-on-med-and-down">
       <li>
-          <NavLink exact to="/login" className="main-nav" activeClassName='main-nav-active'>Home</NavLink>
-        </li>
-        <li>
-          <NavLink exact to="/todo" className="main-nav" activeClassName='main-nav-active'>ToDo List</NavLink>
-        </li>
-        <li>
-          <NavLink exact to="/pictures" className="main-nav" activeClassName='main-nav-active'>Pictures</NavLink>
-        </li>
-        <li>
-          <NavLink exact to="/signup" className="main-nav" activeClassName='main-nav-active'>Sign Up</NavLink>
+          <NavLink exact to="/" className="main-nav" activeClassName='main-nav-active'>Home</NavLink>
         </li>
         <li>
           <NavLink exact to="/login" className="main-nav" activeClassName='main-nav-active'>Log In</NavLink>
